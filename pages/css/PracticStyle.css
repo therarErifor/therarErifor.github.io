@@ -63,9 +63,12 @@ p{
 	box-sizing: border-box;
 }
 header{
-	background-color: #ffff99;
+	background-color: #c2f0f0;
 	display: flex;
-	border-bottom: 2px dashed black;
+	padding-top:5px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	box-shadow: 0px 0px  3px rgba(0,0,0,0.5); 
 }
 nav{
 	margin:auto;
@@ -87,7 +90,6 @@ nav{
 	color: black;
 	text-align: left;
 	padding: 14px 15px;
-	font-weight: bold;
 }
 
 #myTopnav a:hover{
@@ -113,6 +115,7 @@ nav{
 }
 h1{
 	text-align: center;
+	font-weight:  normal;
 }
 .content1{
 	width: 40%;
@@ -155,7 +158,7 @@ footer{
 	background-color:#e6e6ff;
 	display: flex;
 	justify-content: space-between;
-	border-top: 2px dashed black;
+	box-shadow:0 0 3px rgba(0,0,0,0.5); 
 	/*justify-content: end; */
 	/*justify-content: space-around;  /* Равномерно распределяет все элементы по ширине flex-блока.
                                    Все элементы имеют полуразмерное пространство
