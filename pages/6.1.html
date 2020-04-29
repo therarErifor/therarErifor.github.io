@@ -20,7 +20,7 @@
 				<a href="index.html">Главная</a>
 				<a href="practic.html">Практикум</a>
 				<a href="theory.html">Контроль знаний</a>
-				<a href="">Вспомогательные материалы</a>
+				<a href="вспомогательные материалы.html">Вспомогательные материалы</a>
 				<a id="menu" href="#" class="icon">&#9776;</a>
 				</div>
 			</div>
@@ -28,19 +28,52 @@
 	</header>
 
 	<div class="content">
-		<h1 text-align="center">6.1 Массивы</h1>
+		<h1 text-align="center">6.1 Создание массивов</h1>
 		<br>
-
-			<p> Попробуйте создать простой массив:</p>
-			
+		<P>Массив – это особый тип объекта, предназначенный для работы с упорядоченным набором элементов, для хранения упорядоченных коллекций или особой структуры данных. В массиве так же могут храниться элементы любого типа. Не стоит забывать, что элементы массива нумеруются, начиная с нуля.</P>
+		<P></P>
+		<P>Вариант синтаксиса для создания массива:</P>
+		
 <div class="token">
-<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">let</span> <span style="color: #a6e22e">arr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&quot;1&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;2&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;3&quot;</span><span style="color: #f8f8f2">];</span>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">let</span> <span style="color: #a6e22e">arr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&quot;1&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;2&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;3&quot;</span><span style="color: #f8f8f2">];</span>
 </pre></td></tr></table></div>
 </div>
+			<P>На примере выше объявится массив из простых чисел. Чтобы вывести весь массив либо отдельные элементы массива, необходимо просто использовать функцию "alert":</P>
 
-			<P>Осуществите вывод массива:</P>
+
+<div class="token">
+	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">let</span> <span style="color: #a6e22e">arr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;1&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&#39;2&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&#39;3&#39;</span><span style="color: #f8f8f2">];</span>
+<span style="color: #a6e22e">alert</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">arr</span><span style="color: #f8f8f2">);</span> <span style="color: #75715e">//чтобы вывести весь массив</span>
+<span style="color: #a6e22e">alert</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">arr</span><span style="color: #f8f8f2">[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]);</span><span style="color: #75715e">//Чтобы вывести отдельный элемент.</span>
+<span style="color: #75715e">//массив начинает отсчет с нуля, поэтому выведет &quot;2&quot;</span>
+</pre></div>
+
+</div>
+
+			<p> Теперь попробуйте создать простой массив, затем осуществите вывод массива</P>
+			<p>Пример выполнения:</p>
 			<p><img src="image/6.1.png" width="50%"></p>
+			<P></P>
+
 			<p>Сохраните файл в вашей личной папке</p>
+			<P></P>
+			<p><b>Многомерные массивы</b></p>
+			<P>Массивы могут содержать элементы, которые тоже являются массивами. Это можно использовать для создания многомерных массивов, например, для хранения матриц:</P>
+			
+<div class="token">
+	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">let</span> <span style="color: #a6e22e">matrix</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span>
+  <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">3</span><span style="color: #f8f8f2">],</span>
+  <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">5</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">],</span>
+  <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">7</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">9</span><span style="color: #f8f8f2">]</span>
+<span style="color: #f8f8f2">];</span>
+<span style="color: #a6e22e">alert</span><span style="color: #f8f8f2">(</span> <span style="color: #a6e22e">matrix</span><span style="color: #f8f8f2">[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f8f8f2">);</span> <span style="color: #75715e">// 5, центральный элемент</span>
+</pre></div>
+
+</div>
+
+			<P></P>
+			<p>Сохраните файл в вашей личной папке</p>
+			<P></P>
 			<div class="button">
 <button class="button1" onclick="location.href='5.3_for.html'"><b>Назад</b></button>
 <button class="button2" onclick="location.href='6.2.html'"><b>Вперёд</b></button>
