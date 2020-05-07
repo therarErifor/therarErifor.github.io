@@ -55,3 +55,8 @@ function division(){
 	f = a / b;
 	document.getElementById('out').value = f;
 }
+
+function windopen(){
+	let wind = window.open('test.html', 'test', 'width=500px,height=450px')
+}
+
