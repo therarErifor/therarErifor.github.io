@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="js/script.js"></script>
+	<meta charset="UTF-8">
+	<title>5.1 Логические операторы</title>
+	<link rel="shortcut icon" type="image/x-icon" href="JS-logo.ico">
+	<link rel="stylesheet" href="css/list_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="image/icon/JS-logo.png" width="100%" height="100%">
+		</div>
+		<nav>
+			<div class="topnav">
+				<div id="myTopnav">
+				<a href="index (2).html">Главная</a>
+				<a href="practic.html">Практикум</a>
+				<a href="theory.html">Контроль знаний</a>
+				<a href="вспомогательные материалы.html">Вспомогательные материалы</a>
+				<a id="menu" href="#" class="icon">&#9776;</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="content">
+		<h1 text-align="center"> 5.1 Логические операторы</h1>
+		<br>
+			<p>В JavaScript есть три логических оператора: "||" (ИЛИ), "&&" (И) и "!" (НЕ).</p>
+			<p> Несмотря на своё название, данные операторы могут применяться к значениям любых типов. Полученные результаты также могут иметь различный тип.</p>
+			<p></p>
+		<p><b>|| (ИЛИ)</b></p>
+			<p>Оператор «ИЛИ» выглядит как двойной символ вертикальной черты:</p>
+
+<div class="token">
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">result</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">a</span> <span style="color: #f92672">||</span> <span style="color: #a6e22e">b</span><span style="color: #f8f8f2">;</span>
+</pre></div>
+</div>
+			<p>"ИЛИ" предназначено для работы как с логическими переменными "true" и "false", так и с другими переменными. Результат операций всегда равен "true", за исключением случая, когда оба аргумента "false"</p>
+			<p>Обычно оператор || используется в if для проверки истинности любого из заданных условий. Например: </p>
+
+<div class="token">
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">let</span> <span style="color: #a6e22e">hour</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">;</span>
+
+<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(</span><span style="color: #a6e22e">hour</span> <span style="color: #f92672">&lt;</span> <span style="color: #ae81ff">9</span> <span style="color: #f92672">||</span> <span style="color: #a6e22e">hour</span> <span style="color: #f92672">&gt;</span> <span style="color: #ae81ff">17</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #a6e22e">alert</span><span style="color: #f8f8f2">(</span> <span style="color: #e6db74">&#39;Офис закрыт.&#39;</span> <span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+</div>
+
+			<p>Так же данный оператор можно использовать как альтернативу условного оператора "if".</p>
+			<p></p>
+			<p><b>&& (И)</b></p>
+			<p> Оператор "И" пишется как два амперсанда &&:</p>
+			
+<div class="token">
+	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">result</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">a</span> <span style="color: #f92672">&amp;&amp;</span> <span style="color: #a6e22e">b</span><span style="color: #f8f8f2">;</span>
+</pre></div>
+
+</div>
+			<p>Данный оператор находит первое ложное значение и выполняет следующие действия:</p>
+
+			<p>Вычисляет операнды слева направо.<br>
+Каждый операнд преобразует в логическое значение. Если результат false, останавливается и возвращает исходное значение этого операнда.<br>
+Если все операнды были истинными, возвращается последний.</p>
+			<p></p>
+
+			<p><b>! (НЕ)</b></p>
+			<p> Оператор "НЕ" представлен восклицательным знаком !</p>
+
+<div class="token">
+	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">result</span> <span style="color: #f92672">=</span> <span style="color: #f92672">!</span><span style="color: #a6e22e">value</span><span style="color: #f8f8f2">;</span>
+</pre></div>
+
+</div>
+
+			<p>Оператор принимает один аргумент и выполняет следующие действия:</p>
+
+	<p>Сначала приводит аргумент к логическому типу true/false.<br>
+	Затем возвращает противоположное значение.</p>
+	<p>Пример:</p>
+
+<div class="token">
+	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">alert</span><span style="color: #f8f8f2">(</span> <span style="color: #f92672">!</span><span style="color: #66d9ef">true</span> <span style="color: #f8f8f2">);</span> <span style="color: #75715e">// false</span>
+<span style="color: #a6e22e">alert</span><span style="color: #f8f8f2">(</span> <span style="color: #f92672">!</span><span style="color: #ae81ff">0</span> <span style="color: #f8f8f2">);</span> <span style="color: #75715e">// true</span>
+</pre></div>
+
+</div>
+
+			<h2>Задача</h2>
+			<p> </p>
+			<p><b>Напишите код</b>, который будет спрашивать логин с помощью "prompt".</p>
+			<p>Если пользователь вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Неверный логин».</p>
+			<p>Если введён пароль «Я главный», то выводить «Здравствуйте!»,</p>
+			<p>Иначе – «Неверный пароль»,</p>
+			<p>При отмене – «Отменено».</p>
+			<p>Пример выполнения:</p>
+			<p><img src="image/5.11.png" width="40%">&nbsp;<img src="image/5.13.png" margin-left="10px" width="40%"></p>
+			<p></p>
+			<p>Сохраните файл в вашей личной папке под названием 5.1 Логические операторы</p>
+			<div class="button">
+<button class="button1" onclick="location.href='4.2 Условный оператор вопрос.html'"><b>Назад</b></button>
+<button class="button2" onclick="location.href='5.2 Практическое задание.html'"><b>Вперёд</b></button>
+</div>
+
+	</div>
+	
+	<footer>
+		
+			<div class="kontakt">
+	<p>Разработчик: Студент группы 15-ОИ Рахимов Ильшат Ринатович<br>
+Специальность: 09.02.05 Прикладная информатика (по отраслям)
+ГБПОУ "Пермский краевой колледж "ОНИКС"</p>
+		</div>
+
+	</footer>
+
+	
+</body>
+</html>
