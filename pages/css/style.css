@@ -18,7 +18,7 @@ body{
 	background-color: #ffffff;
 	bottom: 0;
 	box-shadow:0 0 10px rgba(0,0,0,0.5); 
-}
+} 
 
 a{
 	text-decoration: none;
@@ -164,7 +164,7 @@ footer{
                                    с обоих концов */
 }
 .kontakt{
-	font-size: 1vw;
+	font-size: 1,5vw;
 	margin-left:5% ; 
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
