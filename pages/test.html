@@ -10,7 +10,6 @@
 	
 </head>
 <body>
-<div class="shild">	
 	<header>
 	
 		<nav>
@@ -27,23 +26,36 @@
   <p>Каким браузером в основном пользуетесь</p>
   <p></p>
   	<form name="test" method="post">
-   <p><input type="radio" name="browser" value="ie"> Internet Explorer</p>
-   <p><input type="radio" name="browser" value="opera"> Opera</p>
-   <p><input type="radio" name="browser" value="firefox"> Firefox</p>
+   <p><input type="radio" id="n1" value="1"> Internet Explorer</p>
+   <p><input type="radio" id="n2" value="0"> Opera</p>
+   <p><input type="radio" id="n3" value="0"> Firefox</p>
   </p>
    
  <p></p>
- <p> <button class="Button_theory">Отправить</button></p>
+ <p> <button class="Button_theory" onclick="check()">Отправить</button></p>
  </form>
 <p></p>
  <p></p>
 
 	</div> <!--content--> 
+	<script>
+		/*function check(){
 	
+
+let u1 = document.getElementById('n1').value;
+let u2 = document.getElementById('n2').value;
+let u3 = document.getElementById('n3').value;
+
+alert("1: " + u1 +"\n"+
+	"2: " + u2 +"\n"+
+	"3: " + u3);
+}
+*/
+	</script>
 	<footer>
 		
 
 	</footer>
-</div>
+
 </body>
 </html>

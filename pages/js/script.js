@@ -60,3 +60,4 @@ function windopen(){
 	let wind = window.open('test.html', 'test', 'width=500px,height=450px')
 }
 
+
