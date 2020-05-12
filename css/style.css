@@ -17,7 +17,7 @@ body{
 	overflow: hidden;
 	height: 100vh;
 	box-shadow:0 0 10px rgba(0,0,0,0.5); 
-	background-color: #ffffff;
+	background-color: #ffffff; 
 }
 a{
 	text-decoration: none;
@@ -100,7 +100,7 @@ header{
 	justify-content: center;
 }
 button{
-	background-color: #ffbf00;
+	background-color: #e6e6ff;
 	display: block;
 	padding: 2px;
 	margin:10px;
@@ -111,9 +111,9 @@ button{
 	font-style: bold;
 }
 button:hover {
-    background-color: white; 
+    background-color: #b3d9ff; 
     color: black;
-	border:2px solid #ffbf00;
+
 }
 .info-type1{
 	display: flex;
