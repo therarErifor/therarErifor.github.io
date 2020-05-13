@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<script src="js/script.js"></script>
+	<script src="js/test.js"></script>
 	<meta charset="UTF-8">
 	<title>Тест</title>
 	<link rel="shortcut icon" type="image/x-icon" href="JS-logo.ico">
 	<link rel="stylesheet" href="css/test_style.css">
 	<link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
 	
+<style>
+
+#option1,#option2,#option3,#option4{
+	display:none;
+	margin-bottom: 10px;
+}
+.answer{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 10px 20px 10px 20px;
+    font-family: 'tahoma';
+    background: #e6e6ff;
+    width: 300px;
+    height: 30px;
+    padding: 4px 8px;
+	border: 0;
+	cursor: pointer;
+}
+</style>
+
+	<script>
+	//Массив вопросов и ответа
+	let data_array = [
+	  ["Сколько сантиметров в метре?","10","1024","100","1000",3],
+	  ["Перевод слова: Hello","Как дела?","Привет","Ты","Дом",2],
+	  ["Перевод слова: Dog","Собака","Кошка","Дерево","Сосиска",1],
+	  ["Сколько месяцев в году?","10","11","12","13",3],
+	  ["Перевод слова: Tree","Три","Собака","Дерево","Дом",3],
+	  ["Перевод слова: Wall","Стена","Дом","Башня","Война",1],
+	];
+
+	let plus = 0;
+	let cur_answer = 0;
+	let count_answer = data_array.length;
+	
+	/*function sec() {
+		time++;	
+		document.getElementById('time').innerHTML='Затрачено времени: ' + time + ' сек';
+	}
+	*/
+
+</script>
 </head>
 <body>
-	<header>
-	
-		<nav>
-			<p>Инструкция: выберите один правильный ответ</p>
+<header>
+	<nav >
+		<p>Инструкция: выберите один правильный ответ</p>
+	</nav>
+</header>
+<div class="content">
 
-		</nav>
-	</header>
+ 	
 
-	<div class="content">
+<body>
+				
+		<p style="font-size: 20px;padding-top: 2px;" id="result"></p>
+					
+		<p style="font-size: 20px;padding-top: 2px;" id="question"></p>
 		
+		<button onclick="check(1)" class="answer" id="option1"></button>
 		
- <p></p>
- <p></p>
-  <p>Каким браузером в основном пользуетесь</p>
-  <p></p>
-  	<form name="test" method="post">
-   <p><input type="radio" id="n1" value="1"> Internet Explorer</p>
-   <p><input type="radio" id="n2" value="0"> Opera</p>
-   <p><input type="radio" id="n3" value="0"> Firefox</p>
-  </p>
-   
- <p></p>
- <p> <button class="Button_theory" onclick="check()">Отправить</button></p>
- </form>
-<p></p>
- <p></p>
-
-	</div> <!--content--> 
-	<script>
-		/*function check(){
-	
-
-let u1 = document.getElementById('n1').value;
-let u2 = document.getElementById('n2').value;
-let u3 = document.getElementById('n3').value;
-
-alert("1: " + u1 +"\n"+
-	"2: " + u2 +"\n"+
-	"3: " + u3);
-}
-*/
-	</script>
-	<footer>
+		<button onclick="check(2)" class="answer" id="option2"></button>
 		
+		<button onclick="check(3)" class="answer" id="option3"></button>
+		
+		<button onclick="check(4)" class="answer" id="option4"></button>
+	<br>
+	<center>
+		<div id="start">
+		<p>Уважаемый студент, в данном тесте 6 вопросов, по прохождению которого вы получите соответствующую оценку. Удачи!</p>
+		<p></p>
+		<button  class="answer" onclick="check(0)">Приступить к тесту</button>
+	</div>
+		<script> let curent_url = document.URL; document.write("<a id='end' style='display: none;' class='answer' href='" + curent_url + "'>Начать сначала</a>"); </script>	
+	</center><br>
 
-	</footer>
+</div> <!--content--> 
+
 
 </body>
 </html>
