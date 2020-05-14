@@ -104,6 +104,46 @@ function run(num){
 		"а равен b - "+ e + "\n"+
 		"а неравен b - "+ f + "\n"+
 		"а больше или равен b - " + h);
+	}else
+	if (num == 4.1){
+		let a = prompt("Первое число");
+		let b =	prompt("Второе число");
+		if(a>b){
+			a = a * 2;
+			alert("Первое число больше"+"\n" + "результат: " + a);
+		}else if(a < b){
+			b = +b + 10;
+			alert("Второе число больше"+"\n" + "результат: " + b);
+		}else alert("Оба числа равны");
+	}else
+	if(num == 4.21){		//необходимо заполнить!!
+
+	}else
+	if(num == 4.22){
+
+	}else
+	if(num == 5.11){
+		let hour = 8;
+		if (hour < 9 || hour > 17) {
+  		alert( 'Офис закрыт.' );
+		}
+	}else
+	if(num == 5.12){
+		let userName = prompt("Введите логин?", '');
+		if (userName == 'Админ') {
+  		let pass = prompt('Пароль?', '');
+  		if (pass == 'Я главный') {
+    		alert( 'Здравствуйте!' );
+  		} else if (pass == '' || pass == null) {
+    		alert( 'Отменено' );
+  		} else {
+    		alert( 'Неверный пароль' );
+  		}
+		} else if (userName == '' || userName == null) {
+  		alert( 'Отменено' );
+		} else {
+  		alert( "Неверный логин" );
+		}
 	}
 
 
