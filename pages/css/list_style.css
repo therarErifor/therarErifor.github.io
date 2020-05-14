@@ -6,7 +6,7 @@
 html{
 	background:url(fon.png);
 	background-size:100px 100px; 
-}
+} 
 
 html::-webkit-scrollbar-track
 {
