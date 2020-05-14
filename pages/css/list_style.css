@@ -43,9 +43,8 @@ li{
 	/*font-size:20px;*/
 }
 p{
-	font-size: px;
 	color: black;
-	padding: 5px 20px;
+	padding: 5px 50px;
 	/*font-weight: bold;		Жирное начертание текста*/
 }
 
@@ -99,7 +98,7 @@ nav{
 .topnav .icon{
 	display: none;
 }
-
+ 
 .content{
 	margin:auto;
 	padding-top: 25px;
@@ -127,19 +126,19 @@ h1, h2{
 	justify-content: center;
 }
 .token{
-	padding: 2%;
+	padding: 2% 6%;
 	font-size: 1.5vw;
 }
 .button{
-	height: 60px;
-	padding: 2%
+	height: 38px;
+	padding: 2% 5%;
 }
 .button1{
 	background-color: #e6e6ff;
 	float: left;
 	padding: 2px;
 	border-radius: 4px;
-	height: 60px;
+	height: 38px;
 	width: 20%;
 	font-size: 1.5vw;
 	font-style: bold;
@@ -150,7 +149,7 @@ h1, h2{
 	display: block;
 	padding: 2px;
 	border-radius: 4px;
-	height: 60px;
+	height: 38px;
 	width: 20%;
 	font-size: 1.5vw;
 	font-style: bold;
@@ -159,6 +158,18 @@ button:hover {
     background-color: #b3d9ff; 
     color: black;
 
+}
+
+.but_demo{
+	background-color: #e6e6ff; 
+	display: block; 
+	padding: 2px;
+	margin:10px;
+	border-radius: 4px;
+	height: 6vh;
+	width: 20%;
+	font-size: 1.5vw;
+	font-style: bold;
 }
 
 .Button_theory{
@@ -201,15 +212,38 @@ footer{
                                    Все элементы имеют полуразмерное пространство
                                    с обоих концов */
 }
+.tool{
+	height: 0px;
+}
+.tool button{
+	display:  block;
+	position: relative;
+	/*padding: 5px;*/
+	width: 150px;
+	height: 40px;
+	bottom: -2px;
+	background-color: #272822;
+	border: 3px solid #ccc;
+  	border-radius: 8px;
+  	transition: 0.2s;
+	margin-left: 83.5% ;
+	font-weight: bold;
+	font-size: 18px;
+	color:#ffffff;
+}
+.tool button:hover{
+	background-color: #4d4d4d; 
+}
+
 .kontakt{
-	font-size: 1.5vw;
+	font-size: 1.3vw;
 	margin: auto ; 
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
 }
-.kontakt p{
+/*.kontakt p{
 	font-size: 18px;
-}
+}*/
 .kontakt img{
 	height: 20px; 
 	float: left;

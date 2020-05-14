@@ -60,4 +60,53 @@ function windopen(){
 	let wind = window.open('test.html', 'test', 'width=500px,height=450px')
 }
 
+function run(num){
+	if (num == 0){
+		let name = 'Ильшат';
+   		alert('Привет, '+ name);
+	}else 
+	if (num == 1){
+		let name = prompt("Как вас зовут?");
+   		alert('Привет, '+ name);
+	}else
+	if (num == 2.2){
+		let name = prompt("Как вас зовут?");
+		let age = prompt("Сколько вам лет?");
+   		alert('Имя: '+ name + '\n'+
+   			'Возраст: ' + age);
+	}else
+	if (num == 3){
+		let a = prompt("Введите первое число");
+		let b = prompt("Введите второе число");
+	}else
+	if (num == 3.1){
+		let a = prompt('Введите первое число');
+		let b = prompt('Введите второе число');
+		let s = +a + +b;
+		let v = a - b;
+		let u = a * b;
+		let d = a / b;
+		alert("Сложение: " + s + "\n" +
+			"Вычитание : " + v + "\n" +
+			"Умножение : " + u + "\n" +
+			"Деление : " + d);
+	}else
+	if (num == 3.2){
+		let a = prompt("Введите число а");
+		let b = prompt("Введите второе число b");
+		let c =(a > b);
+		let d =(a < b);
+		let e =(a == b);
+		let f =(a != b);
+		let h =(a >= b);
+		alert("а больше b - "+ c +"\n"+
+		"а меньше b - "+ d + "\n"+
+		"а равен b - "+ e + "\n"+
+		"а неравен b - "+ f + "\n"+
+		"а больше или равен b - " + h);
+	}
+
+
+}
+
 
