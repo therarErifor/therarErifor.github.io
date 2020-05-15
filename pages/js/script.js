@@ -226,9 +226,25 @@ alert(arr);
 		alert(styles);
 		styles.unshift("Персик", "Гранат");
 		alert(styles);
+	}else
+	if (num == 55){
+		alert('Тест');
+		alert('Пройден');
+
+	}else
+	if (num == 56){
+		alert('Сложение');
+		alert('Вычитание');
+		alert('Умножение');
+		alert('Деление');
 	}
+
 }
 
 function showMessage(){
  alert( 'Привет мир!' );
+}
+function resh(){
+	let a = document.querySelector('textarea');
+	alert(a);
 }
