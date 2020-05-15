@@ -245,6 +245,7 @@ function showMessage(){
  alert( 'Привет мир!' );
 }
 function resh(){
-	let a = document.querySelector('textarea');
-	alert(a);
+	let a = document.getElementById('textareaId').value;
+	eval(a);
+	
 }
