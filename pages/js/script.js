@@ -116,11 +116,28 @@ function run(num){
 			alert("Второе число больше"+"\n" + "результат: " + b);
 		}else alert("Оба числа равны");
 	}else
-	if(num == 4.21){		//необходимо заполнить!!
-
+	if (num == 4.11){
+		let age = prompt('Сколько вам лет?', '');
+		if (age < 18) {
+  		alert('Вы не достигли совершеннолетия');
+		} else {
+  		alert('Вы достигли совершеннолетия');
+		}
+	}else
+	if(num == 4.21){	
+		let age = prompt('Сколько вам лет?', '');
+		(age < 18) ? alert('Вы не достигли совершеннолетия') : alert('Вы достигли совершеннолетия');
 	}else
 	if(num == 4.22){
-
+		let a = prompt("Первое число");
+		let b =	prompt("Второе число");
+		if(a>b){
+			a = a * 2;
+			alert("Первое число больше"+"\n" + "результат: " + a);
+		}else if(a < b){
+			b = +b + 10;
+			alert("Второе число больше"+"\n" + "результат: " + b);
+		}else alert("Оба числа равны");
 	}else
 	if(num == 5.11){
 		let hour = 8;
@@ -144,9 +161,62 @@ function run(num){
 		} else {
   		alert( "Неверный логин" );
 		}
+	}else
+	if(num == 5.2){
+		let t = prompt("Введите время (в часах): ");
+		let x = (t < 9) || (t > 17);
+		if (x == true){
+		alert("Колледж закрыт!");
+		} else {
+			alert("Колледж открыт!");
+		}
+	}else
+	if(num == 6.11){
+		let i = 0;
+		while (i < 3) { // выводит 0, затем 1, затем 2
+  		alert( i );
+  		i++;
+		}
+	}else
+	if(num == 6.12){
+		alert('Бочка опорожнится наполовину через 59 минут');
+	}else
+	if(num == 6.31){
+		for (let i = 0; i < 3; i++) { // выведет 0, затем 1, затем 2
+  		alert(i);
+		}
+	}else
+	if(num == 6.32){
+	alert("Через 12 минут выльется 36 литров")
+	}else
+	if(num == 7.11){
+		let arr = ['1', '2', '3'];
+		alert(arr); 
+		alert(arr[1]);
+	}else
+	if(num == 7.12){
+		let arr = [
+  			"Яблоко",
+  			"Апельсин",
+  			"Слива",
+			];
+alert(arr);
+	}else
+	if(num == 7.13){
+		let matrix = [
+  		[1, 2, 3],
+  		[4, 5, 6],
+  		[7, 8, 9]
+		];
+		alert( matrix[1][1] );
+	}else
+	if(num == 8.1){
+		function showMessage() {
+  		alert( 'Привет мир!' );
+		}
 	}
-
-
 }
 
-
+function showMessage(){
+ alert( 'Привет мир!' );
+}

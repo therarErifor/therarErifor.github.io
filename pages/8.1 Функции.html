@@ -31,22 +31,31 @@
 		<h1 text-align="center">8.1 Функции. НЕОБХОДИМА ПРАВКА</h1>
 		<br>
 
-			<p> Создайте страницу, с полями ввода для двух чисел и кнопками для произведения операции сложения, вычитания, умножения и деления.</p>
-			<p>Операции будут производиться функциями. Функции будут расположены в отдельном файле. чтобы с ним связаться, необходимо указать путь к файлу со скриптом:</p>
+			<p>Зачастую нам надо повторять одно и то же действие во многих частях программы.</p>
+
+			<p>Например, необходимо красиво вывести сообщение при приветствии посетителя, при выходе посетителя с сайта, ещё где-нибудь.</p>
+
+			<p>Чтобы не повторять один и тот же код во многих местах, придуманы функции. Функции являются основными «строительными блоками» программы.</p>
+			<p>Вначале объявления функции идёт ключевое слово function, после него имя функции, затем список параметров в круглых скобках через запятую (в вышеприведённом примере он пустой) и, наконец, код функции, также называемый «телом функции», внутри фигурных скобок.</p>
 
 <div class="token">
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">function</span> <span style="color: #ffffff;">имя</span><span style="color: #f8f8f2">(</span><span style="color: #ffffff;">параметры</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #f8f8f2">...</span><span style="color: #ffffff;">тело</span><span style="color: #f8f8f2">...</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
 
 </div>
+			<p>Пример объявления функции:</p>
+			
+<div class="token">
+	<div class="tool"><button onclick="showMessage()"><img src="image/icon/but_run.png" height="50%">&nbsp;<span>Выполнить</span></button></div>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">function</span> <span style="color: #a6e22e">showMessage</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #a6e22e">alert</span><span style="color: #f8f8f2">(</span> <span style="color: #e6db74">&#39;Привет мир!&#39;</span> <span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
 
-			<p> Далее разместите на веб-странице следующие элементы:</p>
-			<p><img src="image/7.1.png" width="40%"></p>
-			<p>Присвойте полям ввода  стилевой идентификатор "id='n1'" и "id='n2'" соответсвенно</p>
-			<p>каждой кнопке присвойте событие, вызывающее фнукцию onclick="_Название функции_()" (Скобки должны быть обязательно, без них функция не будет работать).  Каждая функция уже будет выполняться в файле скрипта. Пример:</p>
-
-			<p>Метод <b>"document.getElementById" </b>возвращает объект Element, представляющий из себя элемент, глобальный атрибут id которого соответствует указанной строке </p>
-			<p><b>"parseInt"</b> проверяет чтобы введенное значение было целочисленного типа</p>
-			<p><b>"value"</b> указывает введенное значение </p>
-			<p></p>
+</div>
+			<p><b>Задача:</b> </p>
 			<p>Сохраните файл в вашей личной папке под названием 8.1 Функции.</p>
 			<p></p>
 			<div class="button">
