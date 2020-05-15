@@ -57,7 +57,7 @@ function division(){
 }
 
 function windopen(){
-	let wind = window.open('test.html', 'test', 'width=500px,height=450px')
+	let wind = window.open('test.html', 'test', 'width=850px,height=500px')
 }
 
 function run(num){
@@ -214,6 +214,18 @@ alert(arr);
 		function showMessage() {
   		alert( 'Привет мир!' );
 		}
+	}else
+	if(num == 8.11){
+		let styles = ["Яблоко", "Апельсин"];
+		alert(styles);
+		styles.push("Груша");
+		alert(styles);
+		styles[Math.floor((styles.length - 1) / 2)] = "Слива";
+		alert(styles);
+		alert( styles.shift() );
+		alert(styles);
+		styles.unshift("Персик", "Гранат");
+		alert(styles);
 	}
 }
 
