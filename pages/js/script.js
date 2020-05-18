@@ -241,9 +241,7 @@ alert(arr);
 
 }
 
-function showMessage(){
- alert( 'Привет мир!' );
-}
+
 function resh(){
 	let a = document.getElementById('textareaId').value;
 	eval(a);
