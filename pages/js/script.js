@@ -99,11 +99,13 @@ function run(num){
 		let e =(a == b);
 		let f =(a != b);
 		let h =(a >= b);
+		let g =(a <= b)
 		alert("а больше b - "+ c +"\n"+
 		"а меньше b - "+ d + "\n"+
 		"а равен b - "+ e + "\n"+
 		"а неравен b - "+ f + "\n"+
-		"а больше или равен b - " + h);
+		"а больше или равен b - " + h +"\n"+
+		"а меньше или равен b - " + g );
 	}else
 	if (num == 4.1){
 		let a = prompt("Первое число");
@@ -227,10 +229,20 @@ alert(arr);
 		styles.unshift("Персик", "Гранат");
 		alert(styles);
 	}else
+	/*if(num == 8.22){
+		
+	}else
+
+
+		if(num == 8.23){
+		document.getElementById('primer').style.display="none";
+		document.getElementById('btn2').style.display="block";
+		}else
+*/
+
 	if (num == 55){
 		alert('Тест');
 		alert('Пройден');
-
 	}else
 	if (num == 56){
 		alert('Сложение');
@@ -238,13 +250,23 @@ alert(arr);
 		alert('Умножение');
 		alert('Деление');
 	}
-
 }
-
 
 function resh(){
 	let a = document.getElementById('textareaId').value;
 	eval(a);
 	
 	
+}
+
+function op(){
+	document.getElementById('primer').style.display="block";
+	document.getElementById('btn2').style.display="block";
+	document.getElementById('btn1').style.display="none";
+}
+
+function cl(){
+	document.getElementById('primer').style.display="none";
+	document.getElementById('btn2').style.display="none";
+	document.getElementById('btn1').style.display="block";
 }

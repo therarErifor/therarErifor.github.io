@@ -45,6 +45,7 @@ li{
 p{
 	color: black;
 	padding: 5px 20px;
+	align-content: justify;
 	/*font-weight: bold;		Жирное начертание текста*/
 }
 

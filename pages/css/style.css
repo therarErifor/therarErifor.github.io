@@ -32,6 +32,7 @@ li{
 p{
 	color: black;
 	padding: 5px 50px;
+	text-align: justify;
 	/*font-weight: bold;		Жирное начертание текста*/
 }
 .logo{

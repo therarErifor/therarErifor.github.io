@@ -8,8 +8,14 @@
 	<link rel="stylesheet" href="css/list_style.css">
 	<link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
 	
+	<script>
+		function fich(){
+		document.getElementById('btn2').style.display="none";}
+	</script>
+	
+
 </head>
-<body>
+<body onload = "fich();">
 	<header>
 		<div class="logo">
 			<img src="image/icon/JS-logo.png" width="100%" height="100%">
@@ -79,6 +85,25 @@
 			<p><b>"parseInt"</b> проверяет чтобы введенное значение было целочисленного типа</p>
 			<p><b>"value"</b> указывает введенное значение </p>
 			<p></p>
+			
+			
+			<center><button onclick="op()" id="btn1" class="but_demo">Показать пример</button></center>
+			
+			<center><button onclick="cl()" id="btn2" class="but_demo">Скрыть пример</button></center>
+
+			<div id="primer" style="transition: 0.2s; border:2px solid #a3a3c2; display:none; width: 500px; height: 150px; margin:0px auto;">
+
+			<p>Первое число:<input type="text" id="n1" style="margin-left: 1em; width: 30px"></p>
+			<p>Второе число:<input type="text" id="n2" style="margin-left: 1em; width: 30px"></p>
+			<p><button onclick="plus()">Сложение</button>
+			<button onclick="minus()">Вычитание</button>
+			<button onclick="multiplication()">Умножение</button>
+			<button onclick="division()">Деление</button></p>
+			<p><input id="out" placeholder="Результат"></input></p>
+			</div>
+			
+
+   			<p></p>
 			<p>Сохраните файл в вашей личной папке под названием 8.2 Функции. Базовые операции над числами.</p>
 			<p></p>
 			<div class="button">
@@ -93,5 +118,7 @@
 ГБПОУ "Пермский краевой колледж "ОНИКС"</p>
 		</div>
 	</footer>
+
+
 </body>
 </html>
