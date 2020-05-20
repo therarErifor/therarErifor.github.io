@@ -22,21 +22,36 @@
     font-family: 'tahoma';
     background: #e6e6ff;
     width: 500px;
-    height: 30px;
+    height: 40px;
     padding: 4px 8px;
-	border: 0;
+	border: 0.5;
 	cursor: pointer;
+	border-radius: 4px;
+}
+.answer2{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 10px 20px 10px 20px;
+    font-family: 'tahoma';
+    background: #e6e6ff;
+    width: 200px;
+    height: 35px;
+    padding: 4px 8px;
+	border: 0.5;
+	cursor: pointer;
+	border-radius: 4px;
 }
 </style>
 
 	<script>
 	//Массив вопросов и ответа
 	let data_array = [
-	  ["Верно ли следующее утверждение: \n Содержимое тэга script нужно заключать в комментарии <!-- .. -->, чтобы браузеры, которые не поддерживают javascript, работали корректно ?","Да","Нет","Не знаю","Нет правильных ответов",2],
+	  ["Какое событие не вызывается кликом мыши ?","onfocus","onclick","onkeydown","onmousedown",3],
+	  ["Верно ли следующее утверждение: \n Содержимое тэга script нужно заключать в комментарии <!-- .. -->, чтобы браузеры, которые не поддерживают javascript, работали корректно ?","Да","Нет","","",2],
 	  ["Какие обработчики событий сработают при клике на div? \n div.onclick = function() { alert(1) } \n div.onclick = function() { alert(2) }","Только первый","Только второй","Первый, затем второй","Нет правильных ответов",2],
 	  ["Как правильно писать IF конструкцию в JavaScript?","if i == 5 then","if i = 5","if (i == 5)","if (i === 5)",3],
 	  ["Правда ли что a == b ? \n a = new Array(1,2,3) \n b = new Array(1,2,3)","Правда","Неправда","Зависит от множ. случ. обстоятельств..","Нет правильных ответов",2],
-	  ["Какое событие не вызывается кликом мыши ?","onfocus","onclick","onkeydown","onmousedown",3],
 	  ["Какой оператор из этих - выполняет не только математические операции?","*","/","+","-",3],
 	  ["Какие конструкции для циклов есть в javascript?","Только две: for и while.","Только одна: for","Три: for, while и do...while.","Только одна: while",3],
 	  ['Какой из этих вариантов задает массив из элементов "a", "b" ?','let a = new Array("a","b")','let a = { "a", "b" }','let a = ( "a", "b" )','let a = [ "a", "b" ]',1],
@@ -47,7 +62,6 @@
 	let plus = 0;
 	let cur_answer = 0;
 	let count_answer = data_array.length;
-	
 	/*function sec() {
 		time++;	
 		document.getElementById('time').innerHTML='Затрачено времени: ' + time + ' сек';
@@ -79,15 +93,20 @@
 		<button onclick="check(3)" class="answer" id="option3"></button>
 		
 		<button onclick="check(4)" class="answer" id="option4"></button>
+
+		<button  class="answer2" id="back" style=" display: none;" onclick="check(6)">Вернуться</button>
+		<button  class="answer2" id="forward" style=" display: none;" onclick="check(7)">Пропустить ответ</button>
 		</center>
 	<br>
+
 	<center>
 		<div id="start">
 		<p>Уважаемый студент, в данном тесте 6 вопросов, по прохождению которого вы получите соответствующую оценку. Удачи!</p>
 		<p></p>
 		<button  class="answer" style="border-radius: 4px;" onclick="check(0)">Приступить к тесту</button>
 	</div>
-		<script> let curent_url = document.URL; document.write("<a id='end' style='display: none;' class='answer' href='" + curent_url + "'>Начать сначала</a>"); </script>	
+		<script> let curent_url = document.URL; document.write("<a id='end' style='display: none; border-radius: 4px;' class='answer' href='" + curent_url + "'>Начать сначала</a>"); 
+		</script>	
 	</center><br>
 
 </div> <!--content--> 
