@@ -132,9 +132,9 @@ button{
 	font-style: bold;
 }
 button:hover {
-    background-color: white; 
+    background-color: #b3d9ff; 
     color: black;
-	border:2px solid #ffbf00;
+
 }
 .info-type1{
 	display: flex;
@@ -143,6 +143,18 @@ button:hover {
 	padding-bottom: 50px;
 	border-bottom: 2px solid #000;
 }
+.but_demo{
+	background-color: #e6e6ff; 
+	display: inline; 
+	padding: 2px;
+	margin:10px;
+	border-radius: 4px;
+	height: 6vh;
+	width: 20%;
+	font-size: 1.5vw;
+	font-style: bold;
+}
+
 /*.info-type1 img{
 	width: 45%;
 	height: 100%;

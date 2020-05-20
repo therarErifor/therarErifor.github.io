@@ -269,4 +269,8 @@ function cl(){
 	document.getElementById('primer').style.display="none";
 	document.getElementById('btn2').style.display="none";
 	document.getElementById('btn1').style.display="block";
+	document.getElementById('n1').value = "";
+	document.getElementById('n2').value = "";
+	document.getElementById('out').value = "";
 }
+
