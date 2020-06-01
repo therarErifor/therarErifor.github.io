@@ -57,7 +57,7 @@ function division(){
 }
 
 function windopen(){
-	let wind = window.open('test.html', 'test', 'width=850px,height=500px')
+	let wind = window.open('test.html', 'test', 'width=850px,height=550px')
 }
 
 function run(num){
@@ -252,13 +252,6 @@ alert(arr);
 	}
 }
 
-function resh(){
-	let a = document.getElementById('textareaId').value;
-	eval(a);
-	
-	
-}
-
 function op(){
 	document.getElementById('primer').style.display="block";
 	document.getElementById('btn2').style.display="block";
@@ -274,3 +267,8 @@ function cl(){
 	document.getElementById('out').value = "";
 }
 
+function resh(){
+	let a = document.getElementById('textareaId').value;
+	/*eval(a);*/
+	alert(a);
+}
