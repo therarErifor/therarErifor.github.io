@@ -267,8 +267,107 @@ function cl(){
 	document.getElementById('out').value = "";
 }
 
-function resh(){
-	let a = document.getElementById('textareaId').value;
-	/*eval(a);*/
-	alert(a);
+function resh1(){
+	/*let proverka = [
+		['let styles ='],
+		['styles.push'],
+		['styles[Math.floor((styles.length - 1) / 2)] ='],
+		['alert(','styles.shift()',');'],
+		['styles.unshift('],
+	];
+	alert(proverka[1]);
+	let array = [
+		['let styles ='],
+		['stules.push'],
+	];
+
+*/
+
+		let a = document.getElementById('textareaId').value;
+		eval(a);
+}
+
+function resh2(){
+	let result, a, s;
+		s = 0;
+		a = document.getElementById('textareaId').value;
+		let result1 = a.match(/let styles =/);
+		let result2 = a.match(/styles.push/);
+		let result3 = a.match(/Math.floor/);
+		let result4 = a.match(/styles.shift/);
+		let result5 = a.match(/styles.unshift/);
+		if (result1 == 'let styles =' ){
+			s = s + result1.length;
+		}
+		 if (result2 == 'styles.push'){
+			s = s + result2.length;
+		} 
+		if (result3 == 'Math.floor'){
+			s = s + result3.length;
+		}
+		if (result4 == "styles.shift"){
+			s = s + result4.length;
+		} 
+		if (result5 == 'styles.unshift'){
+			s = s + result5.length;
+		}  
+/*		let result2 = a.match(/styles.push/g);
+		let result3 = a.match(/Math.floor/g);
+		let result4 = a.match(/alert(','styles.shift()',');/g);
+		let result5 = a.match(/styles.unshift /g);
+*/
+
+
+		alert('Количество совпадений = '+s);
+		let p = (s*100)/5;
+		alert('Вы решили верно на '+ p +' %');
+/*	let array, n;
+
+	array = document.getElementById('textareaId').value.split('');
+	alert(array);
+	n = array.length;
+	if(array[0] == proverka[0]){
+		alert("true");
+	}else{
+		alert('flase');
+	}
+*/
+
+
+
+
+
+/*	for (let i = 0; i<=n; i++){
+		if (array[i] == proverka[0]){
+			alert('true');
+		}else{alert('false');}
+	}	
+*/
+/*
+	let matrix = array[i].split(/ /);
+	alert(matrix);
+*/
+/*	
+	for (let i = 0; i<=n; i++){
+		matrix[i] = array[i].split(/ /);
+		m=matrix[i].length;
+		alert('Длина '+ i +' строки матрикс ' + m);
+		arraytwo[i][j] = matrix[i];
+
+		j=j++;
+	}
+alert(arraytwo);
+*/
+	/*array.split(' ');*/
+/*	alert(array);
+	alert(arraytwo[1]);*/
+
+
+	/*
+	result = a.filter(function(v) {
+    return b.some(function(v2) {
+        return v.id == v2.id && v.item == v2.item;
+    	}
+	});
+	*/
 }
