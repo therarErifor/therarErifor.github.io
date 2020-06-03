@@ -15,13 +15,10 @@
 			document.getElementById('option4').innerHTML=data_array[cur_answer][4];
 			document.getElementById('question').innerHTML=data_array[cur_answer][0];
 			
-			
 			document.getElementById('start').style.display='none';
 			document.getElementById('end').style.display='inline';
 			document.getElementById('forward').style.display='inline';
 			let intervalID = setInterval(sec, 1000);
-
-			
 
 		}else{
 			
@@ -97,6 +94,21 @@
 			document.getElementById('option3').style.display='block';
 			document.getElementById('option4').style.display='none';
 			}else if(cur_answer == 10){
+			document.getElementById('option3').style.display='none';
+			document.getElementById('option4').style.display='none';
+			}else if(cur_answer == 11){
+			document.getElementById('option3').style.display='block';
+			document.getElementById('option4').style.display='block';
+			}else if(cur_answer == 12){
+			document.getElementById('option3').style.display='block';
+			document.getElementById('option4').style.display='none';
+			}else if(cur_answer == 13){
+			document.getElementById('option3').style.display='block';
+			document.getElementById('option4').style.display='none';
+			}else if(cur_answer == 14){
+			document.getElementById('option3').style.display='block';
+			document.getElementById('option4').style.display='none';
+			}else if(cur_answer == 15){
 			document.getElementById('option3').style.display='none';
 			document.getElementById('option4').style.display='none';
 			}

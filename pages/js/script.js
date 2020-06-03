@@ -290,7 +290,7 @@ function resh1(){
 function resh2(){
 	let result, a, s;
 		s = 0;
-		a = document.getElementById('textareaId').value;
+		a = document.getElementById('textareaId').value; 
 		let result1 = a.match(/let styles =/);
 		let result2 = a.match(/styles.push/);
 		let result3 = a.match(/Math.floor/);
@@ -318,7 +318,7 @@ function resh2(){
 */
 
 
-		alert('Количество совпадений = '+s);
+		//alert('Количество совпадений = '+s);
 		let p = (s*100)/5;
 		alert('Вы решили верно на '+ p +' %');
 /*	let array, n;
