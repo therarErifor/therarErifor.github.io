@@ -281,13 +281,59 @@ function resh1(){
 		['stules.push'],
 	];
 
-*/
+let userName = prompt("Введите логин?", '');
+		if (userName == 'Админ') {
+  		let pass = prompt('Пароль?', '');
+  		if (pass == 'Я главный') {
+    		alert( 'Здравствуйте!' );
+  		} else if (pass == '' || pass == null) {
+    		alert( 'Отменено' );
+  		} else {
+    		alert( 'Неверный пароль' );
+  		}
+		} else if (userName == '' || userName == null) {
+  		alert( 'Отменено' );
+		} else {
+  		alert( "Неверный логин" );
+		}
 
+*/
+	let result, a, s;
+		s = 0;
+		a = document.getElementById('textareaId').value; 
+		let result1 = a.match(/userName == 'Админ'/);
+		let result2 = a.match(/главный/);
+		let result3 = a.match(/дравствуйте/);
+		let result4 = a.match(/Отменено/);
+		let result5 = a.match(/еверный логин/);
+		if (result1 == 'userName == "Админ"' ){
+			s = s + result1.length;
+		}
+		 if (result2 == 'главный'){
+			s = s + result2.length;
+		} 
+		if (result3 == 'дравствуйте'){
+			s = s + result3.length;
+		}
+		if (result4 == "Отменено"){
+			s = s + result4.length;
+		} 
+		if (result5 == 'еверный логин'){
+			s = s + result5.length;
+		}  
+
+		//alert('Количество совпадений = '+s);
+		let p = (s*100)/5;
+		alert('Вы решили верно на '+ p +' %');
+		
+
+		/*
 		let a = document.getElementById('textareaId').value;
 		eval(a);
+		*/
 }
 
-function resh2(){
+function resh3(){
 	let result, a, s;
 		s = 0;
 		a = document.getElementById('textareaId').value; 
@@ -311,12 +357,6 @@ function resh2(){
 		if (result5 == 'styles.unshift'){
 			s = s + result5.length;
 		}  
-/*		let result2 = a.match(/styles.push/g);
-		let result3 = a.match(/Math.floor/g);
-		let result4 = a.match(/alert(','styles.shift()',');/g);
-		let result5 = a.match(/styles.unshift /g);
-*/
-
 
 		//alert('Количество совпадений = '+s);
 		let p = (s*100)/5;
