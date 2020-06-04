@@ -229,17 +229,6 @@ alert(arr);
 		styles.unshift("Персик", "Гранат");
 		alert(styles);
 	}else
-	/*if(num == 8.22){
-		
-	}else
-
-
-		if(num == 8.23){
-		document.getElementById('primer').style.display="none";
-		document.getElementById('btn2').style.display="block";
-		}else
-*/
-
 	if (num == 55){
 		alert('Тест');
 		alert('Пройден');
@@ -251,13 +240,11 @@ alert(arr);
 		alert('Деление');
 	}
 }
-
 function op(){
 	document.getElementById('primer').style.display="block";
 	document.getElementById('btn2').style.display="block";
 	document.getElementById('btn1').style.display="none";
 }
-
 function cl(){
 	document.getElementById('primer').style.display="none";
 	document.getElementById('btn2').style.display="none";
@@ -266,18 +253,16 @@ function cl(){
 	document.getElementById('n2').value = "";
 	document.getElementById('out').value = "";
 }
-
 function resh1(){
-
 	let result, a, s;
 		s = 0;
 		a = document.getElementById('textareaId').value; 
-		let result1 = a.match(/userName == 'Админ'/);
+		let result1 = a.match(/дмин/);
 		let result2 = a.match(/главный/);
 		let result3 = a.match(/дравствуйте/);
 		let result4 = a.match(/Отменено/);
 		let result5 = a.match(/еверный логин/);
-		if (result1 == 'userName == "Админ"' ){
+		if (result1 == 'дмин' ){
 			s = s + result1.length;
 		}
 		 if (result2 == 'главный'){
@@ -286,48 +271,35 @@ function resh1(){
 		if (result3 == 'дравствуйте'){
 			s = s + result3.length;
 		}
-		if (result4 == "Отменено"){
+		if (result4 == 'Отменено'){
 			s = s + result4.length;
 		} 
 		if (result5 == 'еверный логин'){
 			s = s + result5.length;
 		}  
-
 		//alert('Количество совпадений = '+s);
 		let p = (s*100)/5;
-		alert('Вы решили верно на '+ p +' %');
-		
+		alert('Вы решили верно на '+ p +' %');	
 }
 function resh2(){
-
 	let result, a, s;
 		s = 0;
 		a = document.getElementById('textareaId').value; 
-		let result1 = a.match(/userName == 'Админ'/);
-		let result2 = a.match(/главный/);
-		let result3 = a.match(/дравствуйте/);
-		let result4 = a.match(/Отменено/);
-		let result5 = a.match(/еверный логин/);
-		if (result1 == 'userName == "Админ"' ){
+		let result1 = a.match(/(t < 9)/g);
+		let result2 = a.match(/if (x == true)/g);
+		let result3 = a.match(/(t > 17)/);
+		if (result1 == '(t < 9)' ){
 			s = s + result1.length;
 		}
-		 if (result2 == 'главный'){
+		 if (result2 == 'if (x == true)'){
 			s = s + result2.length;
 		} 
-		if (result3 == 'дравствуйте'){
+		if (result3 == '(t > 17)'){
 			s = s + result3.length;
 		}
-		if (result4 == "Отменено"){
-			s = s + result4.length;
-		} 
-		if (result5 == 'еверный логин'){
-			s = s + result5.length;
-		}  
-
 		//alert('Количество совпадений = '+s);
-		let p = (s*100)/5;
-		alert('Вы решили верно на '+ p +' %');
-		
+		let p = (s*100)/3;
+		alert('Вы решили верно на '+ p +' %');	
 }
 function resh3(){
 	let result, a, s;
@@ -353,88 +325,35 @@ function resh3(){
 		if (result5 == 'styles.unshift'){
 			s = s + result5.length;
 		}  
-
 		//alert('Количество совпадений = '+s);
 		let p = (s*100)/5;
 		alert('Вы решили верно на '+ p +' %');
-/*	let array, n;
-
-	array = document.getElementById('textareaId').value.split('');
-	alert(array);
-	n = array.length;
-	if(array[0] == proverka[0]){
-		alert("true");
-	}else{
-		alert('flase');
-	}
-*/
-
-
-
-
-
-/*	for (let i = 0; i<=n; i++){
-		if (array[i] == proverka[0]){
-			alert('true');
-		}else{alert('false');}
-	}	
-*/
-/*
-	let matrix = array[i].split(/ /);
-	alert(matrix);
-*/
-/*	
-	for (let i = 0; i<=n; i++){
-		matrix[i] = array[i].split(/ /);
-		m=matrix[i].length;
-		alert('Длина '+ i +' строки матрикс ' + m);
-		arraytwo[i][j] = matrix[i];
-
-		j=j++;
-	}
-alert(arraytwo);
-*/
-	/*array.split(' ');*/
-/*	alert(array);
-	alert(arraytwo[1]);*/
-
-
-	/*
-	result = a.filter(function(v) {
-    return b.some(function(v2) {
-        return v.id == v2.id && v.item == v2.item;
-    	}
-	});
-	*/
 }
 function resh4(){
-
 	let result, a, s;
 		s = 0;
 		a = document.getElementById('textareaId').value; 
-		let result1 = a.match(/userName == 'Админ'/);
-		let result2 = a.match(/главный/);
-		let result3 = a.match(/дравствуйте/);
-		let result4 = a.match(/Отменено/);
-		let result5 = a.match(/еверный логин/);
-		if (result1 == 'userName == "Админ"' ){
+		let result1 = a.match(/let styles =/);
+		let result2 = a.match(/styles.push/);
+		let result3 = a.match(/Math.floor/);
+		let result4 = a.match(/styles.shift/);
+		let result5 = a.match(/styles.unshift/);
+		if (result1 == 'let styles =' ){
 			s = s + result1.length;
 		}
-		 if (result2 == 'главный'){
+		 if (result2 == 'styles.push'){
 			s = s + result2.length;
 		} 
-		if (result3 == 'дравствуйте'){
+		if (result3 == 'Math.floor'){
 			s = s + result3.length;
 		}
-		if (result4 == "Отменено"){
+		if (result4 == "styles.shift"){
 			s = s + result4.length;
 		} 
-		if (result5 == 'еверный логин'){
+		if (result5 == 'styles.unshift'){
 			s = s + result5.length;
 		}  
-
 		//alert('Количество совпадений = '+s);
 		let p = (s*100)/5;
 		alert('Вы решили верно на '+ p +' %');
-		
 }
